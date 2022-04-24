@@ -1,3 +1,56 @@
-h1 {
+:root {
+    --primary-color: #F56CA9;
+    --secondary-color: #CCCCCC;
+    --third-color: #9CD1D2;
+}
+
+body {
     font-family: 'Urbanist', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(90deg, hsla(309, 96%, 73%, 0.5) 0%, hsla(184, 100%, 57%, 0.5) 100%);
+text-align: center;
+padding: 220px 20px;
+}
+
+.hero p {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 15px 30px;
+}
+
+.links:hover {
+    color: white;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.about-link {
+    background-color: var(--secondary-color);
+}
+
+.works-link {
+    background-color: var(--primary-color);
+}
+
+.contact-link {
+    background-color: var(--third-color);
 }
