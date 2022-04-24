@@ -11,7 +11,7 @@ body {
 .hero {
     background: linear-gradient(90deg, hsla(309, 96%, 73%, 0.5) 0%, hsla(184, 100%, 57%, 0.5) 100%);
 text-align: center;
-padding: 220px 20px;
+padding: 216px 20px;
 }
 
 .hero p {
@@ -29,12 +29,29 @@ padding: 220px 20px;
     opacity: 0.7;
 }
 
+.projects {
+    margin: 60px 30px;
+}
+
+.app-images {
+    box-shadow: 4px 7px 14px -7px rgba(66, 68, 90, 0.27);
+    transition: transform 200ms ease-in-out;
+    display: block;
+    margin: 20px auto;
+}
+
+.app-images:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    }
+
 .links {
     text-decoration: none;
     color: black;
     margin: 10px;
     border-radius: 4px;
     padding: 15px 30px;
+    text-align: center;
 }
 
 .links:hover {
@@ -53,4 +70,20 @@ padding: 220px 20px;
 
 .contact-link {
     background-color: var(--third-color);
+}
+
+@media(max-width:900px) {
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .app-images {
+        max-width: 70%;
+        display: block;
+        margin: 15px auto;
+    }
 }
